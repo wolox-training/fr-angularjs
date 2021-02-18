@@ -1,0 +1,59 @@
+%equal-font-heights {
+ 
+  font-family: Roboto;
+  margin-bottom:40px;
+  display: flex;
+  align-items:baseline;
+
+}
+
+%equal-color1 {
+
+  color: #828282;
+
+}
+
+%equal-color2 {
+
+  color: #000;
+}
+
+
+
+.titulo-libro {
+  @extend %equal-font-heights;  
+  @extend %equal-color2;
+  
+}
+
+.autor-del-libro {
+  @extend %equal-font-heights;
+  @extend %equal-color2;
+  
+}
+
+.editorial {
+  @extend %equal-font-heights;
+  @extend %equal-color2;
+  }
+
+.ano-publicacion {
+  @extend %equal-font-heights;
+  @extend %equal-color2;
+  }
+
+.nombre-autor {
+  @extend %equal-font-heights;
+  @extend %equal-color1;
+  
+}
+
+.nombre-editorial {
+  @extend %equal-font-heights;
+  @extend %equal-color1;
+}
+
+.ano-de-publicacion {
+  @extend %equal-font-heights;
+  @extend %equal-color1;
+}
