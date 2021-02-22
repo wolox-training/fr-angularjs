@@ -1,17 +1,37 @@
-.ano-de-publicacion, .nombre-editorial, .nombre-autor, .ano-publicacion, .editorial, .autor-del-libro, .titulo-libro {
-  font-family: Roboto;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+.data, .data-book {
+  font-family: Roboto, sans-serif;
   display: flex;
   align-items: baseline;
 }
 
-.ano-de-publicacion, .nombre-editorial, .nombre-autor {
-  color: #828282;
+.text-book {
+  width: 540px;
+  border-top: 4px solid #BED23C;
 }
 
-.ano-publicacion, .editorial, .autor-del-libro, .titulo-libro {
+.data-book {
   color: #000;
 }
 
-/*# sourceMappingURL=application.scss.map */
+.data {
+  color: #828282;
+}
+
+.book {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  height: 416px;
+  width: 900px;
+  background-color: #FFF;
+  box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.book-cover {
+  height: 368px;
+  width: 261px;
+  margin: 24px;
+}
 
 /*# sourceMappingURL=application.css.map */

@@ -1,58 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
 %equal-font-heights {
  
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;;
   display: flex;
   align-items:baseline;
 
 }
 
-%equal-color1 {
+$color-1: #828282;
+$color-2: #000;
+$color-3: #BED23C;
+$color-4: #FFF;
 
-  color: #828282;
 
+.text-book {
+  
+  width:540px;
+  border-top: 4px solid $color-3;
 }
 
-%equal-color2 {
 
-  color: #000;
-}
-
-
-
-.titulo-libro {
+.data-book {
   @extend %equal-font-heights;  
-  @extend %equal-color2;
-  
+  color: $color-2; 
 }
 
-.autor-del-libro {
+.data {
   @extend %equal-font-heights;
-  @extend %equal-color2;
-  
+  color: $color-1;  
 }
 
-.editorial {
-  @extend %equal-font-heights;
-  @extend %equal-color2;
-  }
 
-.ano-publicacion {
-  @extend %equal-font-heights;
-  @extend %equal-color2;
-  }
-
-.nombre-autor {
-  @extend %equal-font-heights;
-  @extend %equal-color1;
-  
+.book {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  height: 416px;
+  width: 900px;
+  background-color: $color-4;
+  box-shadow: 4px 4px 10px 0 rgba(0,0,0,0.5);
 }
 
-.nombre-editorial {
-  @extend %equal-font-heights;
-  @extend %equal-color1;
-}
+.book-cover {
+  height: 368px; 
+  width: 261px;
+  margin: 24px;
 
-.ano-de-publicacion {
-  @extend %equal-font-heights;
-  @extend %equal-color1;
 }
