@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 %equal-font-heights {
  
@@ -13,25 +13,6 @@ $color-2: #000;
 $color-3: #BED23C;
 $color-4: #FFF;
 
-
-.text-book {
-  
-  width:540px;
-  border-top: 4px solid $color-3;
-}
-
-
-.data-book {
-  @extend %equal-font-heights;  
-  color: $color-2; 
-}
-
-.data {
-  @extend %equal-font-heights;
-  color: $color-1;  
-}
-
-
 .book {
   display: flex;
   flex-wrap: wrap;
@@ -43,8 +24,41 @@ $color-4: #FFF;
 }
 
 .book-cover {
-  height: 368px; 
+  margin: 24px 52px 24px 24px;
+  height: 368px;
   width: 261px;
-  margin: 24px;
+}
+
+.badge {
+  height: 118.57px ;
+  width: 94.53px;
+  transform: rotate(15deg);
+  position: absolute;
+  left: 223.73px;
+  top: 11.71px;
+  z-index: 0;
+}
+
+.text-book {
+  
+  width:540px;
+  border-top: 4px solid $color-3;
+  
+}
+
+
+.data-book {
+  @extend %equal-font-heights;  
+  color: $color-2; 
+  right: 52px;
 
 }
+
+.data {
+  @extend %equal-font-heights;
+  color: $color-1;  
+}
+
+
+
+
