@@ -1,14 +1,111 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-.data, .data-book {
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+label,
+input,
+a,
+button,
+select,
+textarea {
+  color: #000;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+h1:focus,
+h2:focus,
+h3:focus,
+h4:focus,
+h5:focus,
+h6:focus,
+p:focus,
+span:focus,
+label:focus,
+input:focus,
+a:focus,
+button:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+}
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+input,
+select,
+textarea,
+button {
+  border: 0;
+  border-radius: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+button {
+  background: transparent;
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+a:focus, a:active, a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+::placeholder {
+  color: #999;
+  opacity: 1;
+}
+
+* {
   font-family: Roboto, sans-serif;
-  display: flex;
-  align-items: baseline;
 }
 
 .book {
   display: flex;
   flex-wrap: wrap;
-  align-content: center;
+  align-content: space-around;
   height: 416px;
   width: 900px;
   background-color: #FFF;
@@ -19,29 +116,74 @@
   margin: 24px 52px 24px 24px;
   height: 368px;
   width: 261px;
+  position: relative;
 }
 
-.badge {
-  height: 118.57px;
-  width: 94.53px;
-  transform: rotate(15deg);
+.cover-container {
+  position: relative;
+}
+
+.cover-container::after {
+  content: "";
+  background-image: url(badge.png);
+  background-repeat: no-repeat;
+  background-size: contain;
   position: absolute;
-  left: 223.73px;
-  top: 11.71px;
-  z-index: 0;
+  height: 120px;
+  width: 95px;
+  right: 20px;
+  transform: rotate(15deg);
+}
+
+.book-title {
+  height: 39px;
+  width: 210px;
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: 700;
+  margin-top: 24px;
+}
+
+.gender {
+  height: 30px;
+  width: 98px;
+  color: #828282;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
 }
 
 .text-book {
   width: 540px;
   border-top: 4px solid #BED23C;
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+}
+.text-book > :nth-child(n) {
+  margin-top: 36px;
+  height: 22px;
+  color: #000;
+  line-height: 24px;
 }
 
-.data-book {
-  color: #000;
-  right: 52px;
+.book-author {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.book-editorial {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.book-year {
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .data {
+  font-size: 20px;
   color: #828282;
 }
 
