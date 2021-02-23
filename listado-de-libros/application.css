@@ -27,6 +27,7 @@ textarea {
   line-height: normal;
   margin: 0;
 }
+
 h1:focus,
 h2:focus,
 h3:focus,
@@ -81,6 +82,7 @@ a {
   cursor: pointer;
   text-decoration: none;
 }
+
 a:focus, a:active, a:hover {
   color: #000;
   text-decoration: none;
@@ -102,19 +104,31 @@ li {
   font-family: Roboto, sans-serif;
 }
 
+.nav-bar {
+  height: 70px;
+  width: 1169px;
+  background-color: #FFF;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.logo-wolox {
+  height: 70px;
+  width: 212.42px;
+  margin-left: 120px;
+}
+
 .all-group {
   height: 768px;
-  width: 1366px;
+  width: 1169px;
   background-color: #F4F4F4;
-  display: flex;
-  align-content: center;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
 }
 
 .all-group2 {
   display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .group {
@@ -155,5 +169,7 @@ li {
   margin-top: 8px;
   margin-right: 30px;
 }
+
+/*# sourceMappingURL=application.scss.map */
 
 /*# sourceMappingURL=application.css.map */

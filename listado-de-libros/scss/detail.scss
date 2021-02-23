@@ -1,5 +1,5 @@
-@import 'equalizer.scss';
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import 'equalizer.scss';
 @import 'colors.scss';
 
 
@@ -7,22 +7,32 @@
   font-family: Roboto, sans-serif;
 }
 
+.nav-bar {
+  height: 70px;
+  width: 1169px;
+  background-color: $white;
+  box-shadow: 0 4px 10px 0 $black-shadow;
+}
+
+.logo-wolox {
+  height: 70px;
+  width: 212.42px;
+  margin-left: 120px;
+}
+
 .all-group {
   height: 768px;
-  width: 1366px;
+  width: 1169px;
   background-color: $wild-sand;
-  display: flex;
-  align-content: center;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
 }
 
 .all-group2 {
-   display: flex;
-  
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
-
 
 .group {
   height: 300px;
@@ -40,7 +50,6 @@
 .book-cover{
   height: 200px;
   width: 142px;
-
 }
 
 .book-title{
