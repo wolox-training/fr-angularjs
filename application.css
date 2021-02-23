@@ -1,0 +1,16 @@
+.ano-de-publicacion, .nombre-editorial, .nombre-autor, .ano-publicacion, .editorial, .autor-del-libro, .titulo-libro {
+  font-family: Roboto;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: baseline;
+}
+
+.ano-de-publicacion, .nombre-editorial, .nombre-autor {
+  color: #828282;
+}
+
+.ano-publicacion, .editorial, .autor-del-libro, .titulo-libro {
+  color: #000;
+}
+
+/*# sourceMappingURL=application.css.map */

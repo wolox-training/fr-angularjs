@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import 'equalizer.scss';
+@import 'colors.scss';
+
+
+* {
+  font-family: Roboto, sans-serif;
+}
+
+
+.book {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  height: 416px;
+  width: 900px;
+  background-color: $white;
+  box-shadow: 4px 4px 10px 0 $black-shadow;
+}
+
+.book-cover {
+  margin: 24px 52px 24px 24px;
+  height: 368px;
+  width: 261px;
+  position: relative;
+}
+
+.cover-container {
+  position: relative;
+  &::after {
+    content: '';
+    background-image: url(badge.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    height: 120px;
+    width: 95px;
+    right: 20px;
+    transform: rotate(15deg);
+  }
+}
+
+.book-title {
+  height: 39px;
+  width: 210px;
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: 700;
+  margin-top: 24px; 
+ 
+}
+
+.gender{ 
+  height: 30px;
+  width: 98px;
+  color: $gray;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.text-book {
+  width:540px;
+  border-top: 4px solid $earls-green;
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+
+  & > :nth-child(n) { 
+    margin-top: 36px;
+    height: 22px;
+    color: $black;
+    line-height: 24px;
+  }
+}
+
+.book-author {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.book-editorial {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.book-year {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.data {
+  font-size: 20px;
+  color: $gray;  
+}
