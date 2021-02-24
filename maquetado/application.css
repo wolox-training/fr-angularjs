@@ -102,6 +102,31 @@ li {
   font-family: Roboto, sans-serif;
 }
 
+.all-cover {
+  display: flex;
+  height: 768px;
+  width: 1366px;
+  background-color: #F4F4F4;
+  justify-content: center;
+  align-items: center;
+}
+
+.back {
+  display: flex;
+  position: relative;
+  height: 22px;
+  width: 91px;
+  align-self: flex-start;
+  margin-top: 46px;
+  margin-left: 20px;
+}
+.back::before {
+  content: url(back-arrow-20.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
 .book {
   display: flex;
   flex-wrap: wrap;
@@ -122,7 +147,6 @@ li {
 .cover-container {
   position: relative;
 }
-
 .cover-container::after {
   content: "";
   background-image: url(badge.png);

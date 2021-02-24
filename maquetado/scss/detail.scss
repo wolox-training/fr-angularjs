@@ -7,6 +7,30 @@
   font-family: Roboto, sans-serif;
 }
 
+.all-cover {
+  display: flex;
+  height: 768px;
+  width: 1366px;
+  background-color: $wild-sand;
+  justify-content: center;
+  align-items: center;
+}
+
+.back {
+  display: flex;
+  position: relative;
+  height: 22px;
+  width: 91px;
+  align-self: flex-start;
+  margin-top: 46px;
+  margin-left: 20px;
+  &::before {
+    content: url(back-arrow-20.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+  }
+}
 
 .book {
   display: flex;
