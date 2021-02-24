@@ -104,34 +104,41 @@ li {
 
 .nav-bar {
   height: 70px;
-  width: 1169px;
+  width: 100vw;
   background-color: #FFF;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5);
   position: sticky;
   top: 0;
+  border-top: 6px solid #00ADEE;
 }
 
 .logo-wolox {
   height: 70px;
-  width: 212.42px;
-  margin-left: 120px;
+  width: 210px;
+  margin-left: 450px;
 }
 
-.all-group {
+.logout {
+  height: 18px;
+  width: 63px;
+  color: #000;
+  font-size: 18px;
+  line-height: 21px;
+  position: absolute;
+  margin: 26px 0 0 600px;
+}
+
+.all-book-cover {
   height: 768px;
-  width: 1169px;
+  width: 100%;
   background-color: #F4F4F4;
-}
-
-.all-group2 {
   display: flex;
+  flex-flow: column wrap;
   align-content: center;
-  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
 }
 
-.group {
+.cover {
   height: 300px;
   width: 198px;
   background-color: #FFF;
@@ -140,8 +147,7 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 36px;
-  margin-right: 36px;
+  margin: 36px 36px 0 0;
 }
 
 .book-cover {
@@ -156,8 +162,7 @@ li {
   font-size: 16px;
   font-weight: 700;
   line-height: 18px;
-  margin-top: 12px;
-  margin-right: 30px;
+  margin: 12px 30px 0 0;
 }
 
 .book-author {
@@ -166,8 +171,7 @@ li {
   color: #828282;
   font-size: 14px;
   line-height: 18px;
-  margin-top: 8px;
-  margin-right: 30px;
+  margin: 8px 30px 0 0;
 }
 
 /*# sourceMappingURL=application.css.map */
