@@ -1,21 +1,20 @@
-* {
-  font-family: Roboto, sans-serif;
-}
-
 .nav-bar {
   height: 70px;
   width: 100vw;
+  max-width: 1300px;
   background-color: $white;
   box-shadow: 0 4px 10px 0 $black-shadow;
   position: sticky;
-  top: 0;
   border-top: 6px solid $cerulean;
+  display: flex;
+  justify-content: space-around;
 }
 
 .logo-wolox {
   height: 70px;
   width: 210px;
-  margin-left: 450px;
+  position: relative;
+  right: 50px;
 }
 
 .logout {
@@ -24,12 +23,13 @@
   color: $black;
   font-size: 18px;
   line-height: 21px;
-  position: absolute;
-  margin: 26px 0 0 600px;
+  position: relative;
+  top: 20px;
 }
 
 .all-book-cover {
   height: 768px;
+  max-width: 1300px;
   width: 100%;
   background-color: $wild-sand;  
   display: flex;

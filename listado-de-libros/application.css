@@ -98,24 +98,23 @@ li {
   opacity: 1;
 }
 
-* {
-  font-family: Roboto, sans-serif;
-}
-
 .nav-bar {
   height: 70px;
   width: 100vw;
+  max-width: 1300px;
   background-color: #FFF;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5);
   position: sticky;
-  top: 0;
   border-top: 6px solid #00ADEE;
+  display: flex;
+  justify-content: space-around;
 }
 
 .logo-wolox {
   height: 70px;
   width: 210px;
-  margin-left: 450px;
+  position: relative;
+  right: 50px;
 }
 
 .logout {
@@ -124,12 +123,13 @@ li {
   color: #000;
   font-size: 18px;
   line-height: 21px;
-  position: absolute;
-  margin: 26px 0 0 600px;
+  position: relative;
+  top: 20px;
 }
 
 .all-book-cover {
   height: 768px;
+  max-width: 1300px;
   width: 100%;
   background-color: #F4F4F4;
   display: flex;
@@ -172,6 +172,10 @@ li {
   font-size: 14px;
   line-height: 18px;
   margin: 8px 30px 0 0;
+}
+
+* {
+  font-family: Roboto, sans-serif;
 }
 
 /*# sourceMappingURL=application.css.map */
