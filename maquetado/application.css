@@ -122,12 +122,14 @@ li {
   justify-content: center;
   margin-bottom: 50px;
 }
+
 .back::before {
   content: url(back-arrow-20.png);
   background-repeat: no-repeat;
   background-size: contain;
   position: relative;
   margin-right: 5px;
+
 }
 
 .book {
@@ -138,6 +140,7 @@ li {
   width: 900px;
   background-color: #FFF;
   box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.5);
+  position: relative;
 }
 
 .cover-container {
