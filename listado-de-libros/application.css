@@ -125,13 +125,19 @@ li {
   padding-top: 20px;
 }
 
-.all-book-cover {
+.container {
   height: 768px;
   width: 100vw;
   background-color: #F4F4F4;
+}
+
+.all-book-cover {
+  margin: 0 auto;
   display: flex;
   flex-flow: column wrap;
-  align-content: center;
+  width: 100%;
+  max-width: 900px;
+  height: 700px;
   justify-content: center;
 }
 
