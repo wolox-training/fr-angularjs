@@ -1,34 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-@import 'equalizer.scss';
-@import 'colors.scss';
-
-
-* {
-  font-family: Roboto, sans-serif;
-}
-
-.all-cover {
-  display: flex;
-  height: 768px;
-  width: 1366px;
+.cover {
+  width: 100vw;
   background-color: $wild-sand;
+} 
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  width: 100%;
   justify-content: center;
-  align-items: center;
 }
 
 .back {
-  display: flex;
+  height: 20px;
+  width: 59px;
+  font-size: 20px;
+  line-height: 24px;
   position: relative;
-  height: 22px;
-  width: 91px;
-  align-self: flex-start;
-  margin-top: 46px;
-  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
   &::before {
     content: url(back-arrow-20.png);
     background-repeat: no-repeat;
     background-size: contain;
-    position: absolute;
+    position: relative;
+    margin-right: 5px;
   }
 }
 
@@ -40,13 +38,6 @@
   width: 900px;
   background-color: $white;
   box-shadow: 4px 4px 10px 0 $black-shadow;
-}
-
-.book-cover {
-  margin: 24px 52px 24px 24px;
-  height: 368px;
-  width: 261px;
-  position: relative;
 }
 
 .cover-container {
@@ -62,6 +53,13 @@
     right: 20px;
     transform: rotate(15deg);
   }
+}
+
+.book-cover {
+  margin: 24px 52px 24px 24px;
+  height: 368px;
+  width: 261px;
+  position: relative;
 }
 
 .book-title {
