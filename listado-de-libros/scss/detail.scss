@@ -1,0 +1,49 @@
+.container {
+  width: 100vw;
+  background-color: $wild-sand;
+}
+.all-book-cover {
+  margin: 0 auto; 
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  max-width: 900px;
+  height: 700px;
+  justify-content: center;
+}
+
+.cover {
+  height: 300px;
+  width: 198px;
+  background-color: $white;
+  box-shadow: 4px 4px 10px 0 $black-shadow;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 36px 36px 0 0;
+}
+
+.book-cover{
+  height: 200px;
+  width: 142px;
+}
+
+.book-title{
+  height: 15px;
+  width: 109px;
+  color: $black;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  margin: 12px 30px 0 0;
+}
+
+.book-author{
+  height: 14px;
+  width: 109px;
+  color: $gray;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 8px 30px 0 0;
+}
