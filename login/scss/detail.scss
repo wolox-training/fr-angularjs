@@ -1,0 +1,60 @@
+body {  
+  width: 100vw;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 300px;
+  background-color: $wild-sand;
+  border-top: 8px solid $cerulean;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-wolox {
+  height: 70px;
+  width: 210px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+label {
+  height: 22px;
+  color: $black;
+  font-size: 16px;
+  line-height: 24px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.data {
+  height: 32px;
+  width: 252px;
+  border-radius: 5px;
+  background-color: $white;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.login {
+  height: 32px;
+  width: 252px;
+  border-radius: 5px;
+  background-color: $earls-green;
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.singup {
+  box-sizing: border-box;
+  height: 32px;
+  width: 252px;
+  border-radius: 5px;
+  background-color: $wild-sand;
+  border: 2px solid $earls-green;
+  position: relative;
+  margin-bottom: 20px;
+}
