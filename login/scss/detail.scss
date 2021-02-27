@@ -45,7 +45,12 @@ label {
   border-radius: 5px;
   background-color: $earls-green;
   position: relative;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
+  
+}
+
+.border {
+  border-top: 2px solid $silver-chalise;
 }
 
 .singup {
@@ -57,4 +62,5 @@ label {
   border: 2px solid $earls-green;
   position: relative;
   margin-bottom: 20px;
+  margin-top: 15px;
 }
