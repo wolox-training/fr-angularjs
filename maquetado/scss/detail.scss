@@ -27,7 +27,6 @@
     background-size: contain;
     position: relative;
     margin-right: 5px;
-  }
 }
 
 .book {
@@ -38,6 +37,7 @@
   width: 900px;
   background-color: $white;
   box-shadow: 4px 4px 10px 0 $black-shadow;
+  position: relative;
 }
 
 .cover-container {
