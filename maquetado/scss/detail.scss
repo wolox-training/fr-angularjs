@@ -1,6 +1,11 @@
+$widthBadgeDesktop: 95px;
+$widthBadgeCellphone: calc(var($widthBadgeDesktop) * 70%);
+
 .cover {
   width: 100vw;
   background-color: $wild-sand;
+  height: 768px;
+  display: flex;
 } 
 
 .container {
@@ -50,7 +55,7 @@
     background-size: contain;
     position: absolute;
     height: 120px;
-    width: 95px;
+    width: $widthBadgeDesktop;
     right: 20px;
     transform: rotate(15deg);
   }
@@ -115,4 +120,87 @@
 .data {
   font-size: 20px;
   color: $gray;  
+}
+
+@media only screen and (max-width: 1024px) {
+  [class='cover'] {
+    height: 667px;
+    width: 100vw;
+  }
+  [class='container'] {
+    width: 100%;
+    max-width: 376px;
+    height: 667px;
+    display: flex;
+    flex-flow: column-reverse;
+    align-items: center;
+  }
+
+  [class='back'] {    
+    font-size: 18px;
+    margin: 20px 0 0 25px;  
+  }
+
+  [class='book'] {
+    height: 570px;
+    width: 336px;
+    align-content: center;
+    justify-content: center;
+  }
+
+  [class='cover-container'] {
+    &::after {
+      /*No toma el primer width*/
+      width: $widthBadgeCellphone;
+      height: 119px;
+      width: 66px;
+      /*Se que no esta bien posicionar así pero no me
+      quedaba en la ubicación*/
+      left: 160px;
+      bottom: 200px;
+    }
+  }
+
+  [class='book-cover'] {
+    height: 299px;
+    width: 212px;
+    margin: 0;
+  }
+
+  [class='book-title'] {
+    width: 161px;
+    font-size: 24px;
+    margin: 21px 0 6px 18px;
+  }
+
+  [class='gender'] {
+    height: 16px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  [class='text-book'] {
+    width: 300px;
+    margin: 6px 18px 0 18px;
+   
+    & > :nth-child(n) { 
+      margin-top: 18px;
+    }
+  }
+
+  [class='book-author'] {
+    font-size: 14px;
+    }
+
+  [class='book-editorial'] {
+    font-size: 14px;
+  }
+
+  [class='book-year'] {
+    font-size: 14px;
+  }
+
+  [class='data'] {
+    font-size: 14px;
+  }
 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 * {
   box-sizing: border-box;
@@ -101,6 +102,8 @@ li {
 .cover {
   width: 100vw;
   background-color: #F4F4F4;
+  height: 768px;
+  display: flex;
 }
 
 .container {
@@ -122,14 +125,12 @@ li {
   justify-content: center;
   margin-bottom: 50px;
 }
-
 .back::before {
   content: url(back-arrow-20.png);
   background-repeat: no-repeat;
   background-size: contain;
   position: relative;
   margin-right: 5px;
-
 }
 
 .book {
@@ -217,6 +218,86 @@ li {
   color: #828282;
 }
 
+@media only screen and (max-width: 1024px) {
+  [class=cover] {
+    height: 667px;
+    width: 100vw;
+  }
+
+  [class=container] {
+    width: 100%;
+    max-width: 376px;
+    height: 667px;
+    display: flex;
+    flex-flow: column-reverse;
+    align-items: center;
+  }
+
+  [class=back] {
+    font-size: 18px;
+    margin: 20px 0 0 25px;
+  }
+
+  [class=book] {
+    height: 570px;
+    width: 336px;
+    align-content: center;
+    justify-content: center;
+  }
+
+  [class=cover-container]::after {
+    /*No toma el primer width*/
+    width: calc(var($widthBadgeDesktop) * 70%);
+    height: 119px;
+    width: 66px;
+    /*Se que no esta bien posicionar así pero no me
+    quedaba en la ubicación*/
+    left: 160px;
+    bottom: 200px;
+  }
+
+  [class=book-cover] {
+    height: 299px;
+    width: 212px;
+    margin: 0;
+  }
+
+  [class=book-title] {
+    width: 161px;
+    font-size: 24px;
+    margin: 21px 0 6px 18px;
+  }
+
+  [class=gender] {
+    height: 16px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  [class=text-book] {
+    width: 300px;
+    margin: 6px 18px 0 18px;
+  }
+  [class=text-book] > :nth-child(n) {
+    margin-top: 18px;
+  }
+
+  [class=book-author] {
+    font-size: 14px;
+  }
+
+  [class=book-editorial] {
+    font-size: 14px;
+  }
+
+  [class=book-year] {
+    font-size: 14px;
+  }
+
+  [class=data] {
+    font-size: 14px;
+  }
+}
 * {
   font-family: Roboto, sans-serif;
 }
