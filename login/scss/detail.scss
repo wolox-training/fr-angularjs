@@ -1,11 +1,15 @@
-body {  
+.login-container {  
   width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 .container {
   margin: 0 auto;
   width: 100%;
   max-width: 300px;
+  max-height: 400px;
   background-color: $wild-sand;
   border-top: 8px solid $cerulean;
   display: flex;
@@ -17,8 +21,14 @@ body {
 .logo-wolox {
   height: 70px;
   width: 210px;
-  position: relative;
-  margin-bottom: 20px;
+  margin: 20px 0 16px 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 2px solid $silver-chalise;
 }
 
 label {
@@ -27,16 +37,16 @@ label {
   font-size: 16px;
   line-height: 24px;
   position: relative;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
-.data {
+.input {
   height: 32px;
   width: 252px;
   border-radius: 5px;
   background-color: $white;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .login {
@@ -45,12 +55,8 @@ label {
   border-radius: 5px;
   background-color: $earls-green;
   position: relative;
-  margin-bottom: 15px;
+  margin: 8px 0 16px 0;
   
-}
-
-.border {
-  border-top: 2px solid $silver-chalise;
 }
 
 .singup {
@@ -60,7 +66,8 @@ label {
   border-radius: 5px;
   background-color: $wild-sand;
   border: 2px solid $earls-green;
-  position: relative;
-  margin-bottom: 20px;
-  margin-top: 15px;
+  margin: 16px 0 24px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

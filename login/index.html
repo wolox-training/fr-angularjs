@@ -7,23 +7,18 @@
   </head>
 
   <body>
-    <div class="container">
-      <img  class ="logo-wolox" src="LogoWolox.png" alt="Logo Wolox">
-      <form>
-        <label for="email">Email</label><br>
-        <input class="data" type="email" id="email" name="email"><br>
-        <label for="pwd">Password</label><br>
-        <input class="data" type="password" id="pwd" name="pwd"><br>
-        <div class="login">
-        <a href="../listado-de-libros/index.html"> 
-          <input class="login" type="button"  value="Log In">
-        </a>
-        </div>
-        
-        <div class="border">
-          <input class="singup" type="submit" value="Sing Up">
-        </div>
-      </form>
+    <div class="login-container">
+      <div class="container">
+        <img  class ="logo-wolox" src="LogoWolox.png" alt="Logo Wolox">
+        <form class="form">
+          <label for="email">Email</label>
+          <input class="input" type="email" id="email" name="email">
+          <label for="pwd">Password</label>
+          <input class="input" type="password" id="pwd" name="pwd">
+          <button class="login" type="submit" formaction="../listado-de-libros/index.html" value="Log In">Log In</button>     
+        </form>  
+        <a class="singup">Sing Up</a>       
+      </div>
     </div>
   </body>
 </html>
