@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 * {
   box-sizing: border-box;
@@ -102,8 +101,9 @@ li {
 .cover {
   width: 100vw;
   background-color: #F4F4F4;
-  height: 768px;
-  display: flex;
+}
+.cover .container {
+  max-width: 300px;
 }
 
 .container {
@@ -198,17 +198,7 @@ li {
   line-height: 24px;
 }
 
-.book-author {
-  font-size: 20px;
-  font-weight: 700;
-}
-
-.book-editorial {
-  font-size: 20px;
-  font-weight: 700;
-}
-
-.book-year {
+.detail-label {
   font-size: 20px;
   font-weight: 700;
 }
@@ -219,82 +209,58 @@ li {
 }
 
 @media only screen and (max-width: 1024px) {
-  [class=cover] {
-    height: 667px;
-    width: 100vw;
-  }
-
-  [class=container] {
-    width: 100%;
+  .container {
     max-width: 376px;
     height: 667px;
-    display: flex;
-    flex-flow: column-reverse;
     align-items: center;
+    flex-flow: column-reverse;
   }
 
-  [class=back] {
+  .back {
     font-size: 18px;
-    margin: 20px 0 0 25px;
+    margin-top: 25px;
   }
 
-  [class=book] {
+  .book {
     height: 570px;
     width: 336px;
     align-content: center;
     justify-content: center;
   }
 
-  [class=cover-container]::after {
-    /*No toma el primer width*/
-    width: calc(var($widthBadgeDesktop) * 70%);
-    height: 119px;
-    width: 66px;
-    /*Se que no esta bien posicionar así pero no me
-    quedaba en la ubicación*/
+  .cover-container::after {
+    width: calc(95px * 0.7);
     left: 160px;
     bottom: 200px;
   }
 
-  [class=book-cover] {
+  .book-cover {
     height: 299px;
     width: 212px;
     margin: 0;
   }
 
-  [class=book-title] {
+  .book-title {
     width: 161px;
     font-size: 24px;
     margin: 21px 0 6px 18px;
   }
 
-  [class=gender] {
+  .gender {
     height: 16px;
     font-size: 16px;
     line-height: 19px;
   }
 
-  [class=text-book] {
+  .text-book {
     width: 300px;
     margin: 6px 18px 0 18px;
   }
-  [class=text-book] > :nth-child(n) {
+  .text-book .detail {
     margin-top: 18px;
   }
 
-  [class=book-author] {
-    font-size: 14px;
-  }
-
-  [class=book-editorial] {
-    font-size: 14px;
-  }
-
-  [class=book-year] {
-    font-size: 14px;
-  }
-
-  [class=data] {
+  .detail-label, .data {
     font-size: 14px;
   }
 }
