@@ -31,12 +31,11 @@
   border-bottom: 2px solid $silver-chalise;
 }
 
-label {
+title {
   height: 22px;
   color: $black;
   font-size: 16px;
   line-height: 24px;
-  position: relative;
   margin-bottom: 8px;
 }
 
@@ -45,7 +44,6 @@ label {
   width: 252px;
   border-radius: 5px;
   background-color: $white;
-  position: relative;
   margin-bottom: 16px;
 }
 
