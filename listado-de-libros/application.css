@@ -153,7 +153,6 @@ li {
   margin: 36px 36px 0 0;
   transition: transform 0.5s;
 }
-
 .cover:hover {
   transform: scale(1.2);
 }
