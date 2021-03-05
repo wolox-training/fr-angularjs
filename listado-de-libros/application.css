@@ -138,6 +138,7 @@ li {
   max-width: 900px;
   height: 700px;
   justify-content: center;
+  transition: width 3s;
 }
 
 .cover {
@@ -150,6 +151,10 @@ li {
   justify-content: center;
   align-items: center;
   margin: 36px 36px 0 0;
+  transition: transform 0.5s;
+}
+.cover:hover {
+  transform: scale(1.2);
 }
 
 .book-cover {
