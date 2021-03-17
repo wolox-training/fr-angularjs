@@ -1,0 +1,32 @@
+<div class="cover" >
+  <div class="container" >
+    <a class="back"  ui-sref="book-list">Atrás</a>         
+    <a  class="book">
+      <div class="cover-container">
+        <img  class ="book-img" ng-src="{{ $ctrl.book.image_url || $ctrl.defaultCoverImage }}" alt="Book cover">
+      </div>   
+      <div>
+        <div> 
+          <h1 class= "book-title">{{ $ctrl.book.title }}</h1>
+          <p class="gender">{{ $ctrl.book.genre }}</p>
+        </div>   
+        <div class="text-book">          
+          <div>
+            <h3 class="book-author">Autor del libro: </h3>
+            <p class="data"> {{ $ctrl.book.author }}</p>
+          </div>
+      
+          <div>
+            <h3 class="book-editorial">Editorial: </h3>
+            <p class="data"> {{ $ctrl.book.publisher }}</p>
+          </div>
+        
+          <div>
+            <h3 class="book-year">Año de publicación: </h3>
+            <p class="data"> {{ $ctrl.book.year }}</p>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>

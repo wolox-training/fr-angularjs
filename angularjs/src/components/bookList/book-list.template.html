@@ -1,0 +1,13 @@
+<p>
+    Search:
+    <input ng-model="$ctrl.query" />
+</p>
+
+
+<div class="all-book-cover"> 
+    <a class= "books" ng-repeat="book in $ctrl.books | filter:$ctrl.query" ui-sref="cover( {bookId: book.id })" ui-sref-active="active">
+      <img class="book-cover" ng-src='{{book.image_url || $ctrl.coverImage}}' alt="Book cover">
+      <h3 class="books-title">{{ book.title }}</h3>
+      <h5 class="books-author">{{ book.author }}</h5> 
+    </a>
+</div>
