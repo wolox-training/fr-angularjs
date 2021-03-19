@@ -1,0 +1,18 @@
+<div class="login-container">
+  <div class="form-container">
+    <img  class ="logo-wolox" ng-src="{{ $ctrl.logo }}" alt="Logo Wolox">
+    <form class="form" name="loginForm" ng-submit="$ctrl.login(loginForm.$valid)" novalidate>
+      <div class="form-data" ng-class="{ 'has-error': loginForm.email.$invalid && !loginForm.email.$pristine }">
+        <label class="title" for="email">Email</label>
+        <input class="input" type="email" id="email" name="email" ng-model="$ctrl.formData.email" ng-required>
+        <p ng-show="loginForm.email.$invalid && !loginForm.email.$pristine">Ingrese un mail válido</p>
+      </div>
+      <div class="form-data" ng-class="{ 'has-error': loginForm.pwd.$invalid && !loginForm.pwd.$pristine}">
+        <label class="title" for="pwd">Password</label>
+        <input class="input" type="password" id="pwd" name="pwd" ng-model="$ctrl.formData.password" required>
+      </div>  
+      <button class="login" type="submit" ng-disabled="loginForm.$invalid" ui-sref="book-list">Log In</button>
+    </form>  
+    <a class="singup">Sing Up</a>       
+  </div>
+</div>

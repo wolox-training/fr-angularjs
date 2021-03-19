@@ -7,6 +7,10 @@ angular.module('app-bootstrap').config(['$stateProvider', '$urlRouterProvider',
         url: '/',
         component: 'centered'
       })
+      .state('login', {
+        url: '/login',
+        component: 'loginController'
+      })
       .state('book-list', {
         url: '/books',
         component: 'bookController'
